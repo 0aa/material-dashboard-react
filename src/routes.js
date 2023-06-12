@@ -44,11 +44,20 @@ import Notifications from "layouts/notifications";
 import Profile from "layouts/profile";
 import SignIn from "layouts/authentication/sign-in";
 import SignUp from "layouts/authentication/sign-up";
+import Resume from "layouts/resume";
 
 // @mui icons
 import Icon from "@mui/material/Icon";
 
 const routes = [
+  {
+    type: "collapse",
+    name: "Resume",
+    key: "resume",
+    icon: <Icon fontSize="small">dashboard</Icon>,
+    route: "/resume",
+    component: <Resume />,
+  },
   {
     type: "collapse",
     name: "Dashboard",
@@ -75,7 +84,7 @@ const routes = [
   },
   {
     type: "collapse",
-    name: "RTL",
+    name: "Delete this",
     key: "rtl",
     icon: <Icon fontSize="small">format_textdirection_r_to_l</Icon>,
     route: "/rtl",
